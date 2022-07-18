@@ -89,7 +89,9 @@ PHP_CONF_OPT += \
 	$(if $(BR2_PACKAGE_PHP_EXT_ZIP),--enable-zip) \
 	$(if $(BR2_PACKAGE_PHP_EXT_CTYPE),--enable-ctype) \
 	$(if $(BR2_PACKAGE_PHP_EXT_FILTER),--enable-filter) \
-	$(if $(BR2_PACKAGE_PHP_EXT_CALENDAR),--enable-calendar)
+	$(if $(BR2_PACKAGE_PHP_EXT_CALENDAR),--enable-calendar) \
+	$(if $(BR2_PACKAGE_PHP_EXT_MBSTRING),--enable-mbstring)
+	$(if $(BR2_PACKAGE_PHP_EXT_BCMATH),--enable-bcmath)
 
 ifeq ($(BR2_PACKAGE_PHP_EXT_OPENSSL),y)
 PHP_CONF_OPT += --with-openssl=$(STAGING_DIR)/usr

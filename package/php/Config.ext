@@ -157,6 +157,16 @@ config BR2_PACKAGE_PHP_EXT_CALENDAR
 	help
 	  Calendar and event support
 
+config BR2_PACKAGE_PHP_EXT_MBSTRING
+	bool "mbstring"
+	help
+	  Multibyte String Support
+
+config BR2_PACKAGE_PHP_EXT_BCMATH
+	bool "mbstring"
+	help
+	  Arbitrary Precision Mathematics
+
 comment "Database extensions"
 
 config BR2_PACKAGE_PHP_EXT_PDO
